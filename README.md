@@ -18,7 +18,7 @@ This only needs to be setup on one of the elasticsearch nodes
 
 #### Zabbix Agent
 
-- Copy elastizabbix to agent scripts folder
+- Copy elastizabbix.py to agent scripts folder
 - Copy elastizabbix.conf to conf.d or add UserParameter to your agent config
 
 #### Zabbix Frontend
