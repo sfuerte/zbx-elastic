@@ -37,7 +37,6 @@ def get_cache(eshost, esport, api):
 	should_update = (not os.path.exists(cache)) or is_older_then(cache, ttl)
 	if should_update and created_file(lock):
 		try:
-			print stats[api].format(eshost, esport)
 			d = urllib2.urlopen(stats[api].format(eshost, esport)).read()
 			with open(cache, 'w') as f:
 				f.write(d)
